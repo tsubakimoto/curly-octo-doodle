@@ -1,3 +1,3 @@
 # curly-octo-doodle
 
-DefaultEndpointsProtocol=https;AccountName=styutatfsugfunc;AccountKey=G/HMgKJB+J+RaPt5fzT/60zQH/w0H1O8QulW9xUqsGXfWhNZacPXWyV9e4BvtIYsmImAOq22SHnK+ASt+nNb4A==;EndpointSuffix=core.windows.net
+https://func-yuta-tfsug-bhfkagh6ekcbfuas.japanwest-01.azurewebsites.net/api/Function1?code=MAXl_nW0pQcf_4aa9m1O3LvaPxYg6sOpHzrmVQP_9vKvAzFu03dz9Q==
