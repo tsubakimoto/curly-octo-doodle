@@ -25,9 +25,10 @@ public class Function1
         await using var connection = new SqlConnection(connectionString);
         await connection.OpenAsync();
 
-        // Intentionally vulnerable sample for CodeQL SQL injection detection.
-        var sql = "SELECT * FROM Users WHERE Id = '" + userId + "'";
+        // Sample query execution using a parameterized SQL command to avoid SQL injection.
+        var sql = "SELECT * FROM Users WHERE Id = @UserId";
         await using var command = new SqlCommand(sql, connection);
+        command.Parameters.AddWithValue("@UserId", userId);
         await using var reader = await command.ExecuteReaderAsync();
 
         _logger.LogInformation("Executed sample query for userId: {UserId}", userId);
